@@ -1,0 +1,12 @@
+body{
+background-color: gray;
+
+}
+img{
+
+max-width: 800px;
+min-width: none;
+}
+h1{
+text-align:"center"
+}
