@@ -1,12 +1,86 @@
-body{
-background-color: gray;
-
+body {
+    background-color: #333; /* Sötétebb háttér */
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
-img{
 
-max-width: 800px;
-min-width: none;
+header {
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #222; /* Fejléc háttér szín */
+    color: #f2f2f2;
+    border-bottom: 5px solid #444;
 }
-h1{
-text-align:"center"
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #222;
+    padding: 15px;
+}
+
+nav a {
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.szekcio {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.szekcio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+}
+
+.szekcio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #f2f2f2;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
 }
